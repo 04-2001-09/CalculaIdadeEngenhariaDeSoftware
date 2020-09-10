@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <title>Calcula Idade</title>
 </head>
 
 <body>
     <div class="login-box">
         <h2>Calcular Idade</h2>
-        <form>
+        <form id="frmCalculaIdade" method="POST" action="ajax-calculo.php">
             <div class="user-box">
-                <input type="text" name="" required="">
+                <input type="text" name="nome" id="nome" required>
                 <label>Seu Nome</label>
             </div>
             <div class="user-box">
-                <input type="password" name="" required="">
+                <input type="text" name="idade" id="idade" required>
                 <label>Sua Data de Nascimento</label>
             </div>
-            <a href="#">
+            <a href="#" class="calcular">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -29,6 +28,8 @@
             </a>
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 
